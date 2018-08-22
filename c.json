@@ -1,0 +1,9 @@
+{
+"lang":"c",
+"for":"\tfor($i=$start,$i<$end;$i++){ $block }",
+"out":"\t printf(\"%d\",$var);",
+"in": "\t scanf(\"%d\",&$var);",
+
+"file": "#include<stdio.h>\n int main(){\n $block }"
+
+}
