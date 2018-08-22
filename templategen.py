@@ -1,29 +1,47 @@
 import os
+class Stack:
+     def __init__(self):
+         self.items = []
+
+     def isEmpty(self):
+         return self.items == []
+
+     def push(self, item):
+         self.items.append(item)
+
+     def pop(self):
+         return self.items.pop()
+
+     def peek(self):
+         return self.items[len(self.items)-1]
+
+     def size(self):
+         return len(self.items)
+         
+         
+         
+
+
 line=raw_input('enter template:')
+words=lines.split(' ')
+blockstack=Stack()
+curblock={};
+for word in words:
+	parentblock=blockstack.peek()
 
-for word in line.split(' '):
-    print prevtoken
-    if word=="{":
-		output+=forloop % (prevtoken[-3],prevtoken[-2],prevtoken[-3],prevtoken[-1],prevtoken[-3])
+	if word=="{":
+		forbl
 		prevtoken.clear()
-    elif word=="}":
-        output+="""
-        }
-        """
+	elif word=="}":
+
 	elif word=="in":
-		for token in prevtoken:
-			output+="cin>>" + token+";"
-		prevtoken.clear()
-    elif word=="":
-        pass
-    else:
-        prevtoken.append(word)
-output+="""
-
-return 0;
-}
-"""
-
+		inputdic=dic(type="in",vars=prevtokens)
+		parentblock.childs.append(inputdic)
+	elif word=="":
+		pass
+	else:
+		prevtoken.append(word)
+ 
 print output
 
 

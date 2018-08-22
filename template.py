@@ -37,7 +37,7 @@ class template:
 			return output	
 		elif instr=="in":
 			for v in block.vars:
-				output+=subti(self,data["out"],{var:v})
+				output+=subti(self,data["in"],{var:v})
 			return output
 		return output
 	def subti(self,str,d):
